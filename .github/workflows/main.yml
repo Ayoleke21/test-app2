@@ -1,12 +1,10 @@
-name: Build and Deploy Vite React App
+name: Build and Deploy CRA React App
 
 on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - main # Replace with your main branch name
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,4 +23,3 @@ jobs:
 
     - name: Build the app
       run: npm run build
-
